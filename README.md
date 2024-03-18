@@ -24,6 +24,6 @@ Develop a React application for displaying a table with data fetched from the Po
 We have two types of load indicators. 
 1. Spinner - global load indicator which tell us that page loads.
 2. Local "Skeleton" load indicators - each case specific.
-For 
+
 To be able to see all load indicators please use "Slow 3G" from "Network tab" in "Browser DevTools" for Pokemon Details page. Also I have made some delay for Pokemon Details page to make sure that you will not miss Skeleton load indicator
 For Table with pokemons list you can simply select 100 items per page and wou will definitely not miss Skeleton load indicator
