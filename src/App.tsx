@@ -1,24 +1,18 @@
-import './App.css'
-import {useEffect, useState} from "react";
+import "./App.css";
+import "@fontsource/roboto/300.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/roboto/500.css";
+import "@fontsource/roboto/700.css";
+
+import { AppRouterProvider } from "./router.tsx";
+import { Container } from "@mui/material";
 
 function App() {
-  const [, setPokemonsData] = useState<any>()
-
-  const getPokemonsData = async () => {
-    const response = await fetch('https://pokeapi.co/api/v2/pokemon?offset=20&limit=20');
-    const data = response.json()
-    setPokemonsData(data)
-  }
-
-  useEffect(() => {
-
-    getPokemonsData()
-
-  }, []);
-
   return (
-    <>Clean Page</>
-  )
+    <Container className="main-container">
+      <AppRouterProvider />
+    </Container>
+  );
 }
 
-export default App
+export default App;

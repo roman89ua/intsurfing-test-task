@@ -1,9 +1,6 @@
-.main-container {
+.error-container {
     display: flex !important;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100svh;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
